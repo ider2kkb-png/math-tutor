@@ -3,165 +3,40 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>【老師姓名】數學家教</title>
-<meta name="description" content="一對一數學家教，附解題影片，學生可隨時回頭複習。">
+<title>首頁｜【老師姓名】數學家教</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root{
-  --paper:#F6F9FB;
-  --grid:#D9E6F0;
-  --ink:#1B2A49;
-  --ink-soft:#4A5878;
-  --pen:#D2373C;
-  --card:#FFFFFF;
-  --serif:"Noto Serif TC","Songti TC","PMingLiU",serif;
-  --sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
-}
-@media (prefers-color-scheme: dark){
-  :root{--paper:#14213A;--grid:#22345A;--ink:#EEF3FA;--ink-soft:#B4C0D8;--pen:#FF6B70;--card:#1B2C4C}
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{
-  margin:0;font-family:var(--sans);color:var(--ink);line-height:1.8;
-  background-color:var(--paper);
-  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
-  background-size:32px 32px;
-}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--pen);outline-offset:3px}
-.wrap{max-width:960px;margin:0 auto;padding:0 24px}
-header.top{padding:20px 0}
-header.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
-.brand{font-family:var(--serif);font-weight:700;font-size:1.15rem;text-decoration:none}
-nav a{margin-left:20px;text-decoration:none;color:var(--ink-soft)}
-nav a:hover{color:var(--ink);text-decoration:underline;text-decoration-color:var(--pen);text-underline-offset:6px}
-
-.hero{padding:48px 0 72px}
-.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
-h1{font-family:var(--serif);font-weight:700;font-size:clamp(2rem,5vw,3.2rem);line-height:1.3;margin:0 0 20px}
-.lead{color:var(--ink-soft);font-size:1.1rem;max-width:30em;margin:0 0 28px}
-.btn{display:inline-block;padding:12px 24px;border-radius:6px;font-weight:500;text-decoration:none}
-.btn.main{background:var(--ink);color:var(--paper)}
-.btn.main:hover{background:var(--pen);color:#fff}
-.btn.ghost{margin-left:8px;border:2px solid var(--ink)}
-.btn.ghost:hover{border-color:var(--pen)}
-
-.solve{background:var(--card);border:2px solid var(--ink);border-radius:4px;padding:28px 28px 24px;font-family:var(--serif);font-size:1.25rem;box-shadow:6px 6px 0 var(--ink)}
-.solve .q{margin:0 0 14px;font-weight:700}
-.solve ol{list-style:none;margin:0;padding:0}
-.solve li{margin:6px 0}
-.solve .note{display:block;font-family:var(--sans);font-size:.85rem;color:var(--ink-soft)}
-.solve .ans{margin-top:14px;padding-top:12px;border-top:1px dashed var(--ink-soft);font-weight:700}
-.solve .ans span{color:var(--pen);border-bottom:3px solid var(--pen)}
-.solve .tick{color:var(--pen);font-weight:700;margin-left:10px}
-
-section{padding:56px 0}
-h2{font-family:var(--serif);font-size:1.8rem;margin:0 0 24px}
-.panel{background:var(--card);border:2px solid var(--ink);border-radius:4px;padding:32px}
-
-.teacher{display:grid;grid-template-columns:180px 1fr;gap:32px;align-items:start}
-.photo{aspect-ratio:1/1;background:var(--grid);border:2px dashed var(--ink-soft);border-radius:4px;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--ink-soft);font-size:.9rem;padding:8px}
-.teacher h3{font-family:var(--serif);font-size:1.4rem;margin:0 0 8px}
-.teacher p{margin:0 0 14px;max-width:38em}
-.teacher ul{margin:0;padding-left:1.2em}
-.teacher li{margin:4px 0}
-
-.members h2{margin-bottom:12px}
-.members p{margin:0 0 20px;max-width:38em}
-.members ul{margin:0 0 24px;padding-left:1.2em}
-
-footer{padding:32px 0 48px;color:var(--ink-soft)}
-footer p{margin:4px 0}
-
-@media (max-width:720px){
-  .hero .wrap{grid-template-columns:1fr;gap:32px}
-  .teacher{grid-template-columns:1fr}
-  .photo{max-width:180px}
-  nav a{margin:0 16px 0 0}
-  .btn.ghost{margin:12px 0 0}
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header class="top">
-  <div class="wrap">
-    <a class="brand" href="#">【老師姓名】數學家教</a>
-    <nav>
-      <a href="#teacher">師資介紹</a>
-      <a href="#members">學生專區</a>
-      <a href="#contact">聯絡老師</a>
-    </nav>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html">【老師姓名】數學家教</a>
+  <nav>
+    <a href="index.html" aria-current="page">首頁</a>
+    <a href="teacher.html">師資介紹</a>
+    <a href="members.html">學生專區</a>
+    <a href="contact.html">聯絡老師</a>
+  </nav>
+</div></header>
+<main><div class="wrap">
+<div class="hero">
+  <div>
+    <h1>每一題都講到你會為止</h1>
+    <p class="lead">一對一數學家教。上課講過的題目都有解題影片，回家卡住時可以隨時回頭看。</p>
+    <a class="btn main" href="members.html">學生專區</a>
+    <a class="btn ghost" href="contact.html">詢問課程</a>
   </div>
-</header>
-
-<main>
-<section class="hero" style="padding-top:48px">
-  <div class="wrap">
-    <div>
-      <h1>每一題都講到你會為止</h1>
-      <p class="lead">一對一數學家教。上課講過的題目都有解題影片，回家卡住時可以隨時回頭看。</p>
-      <a class="btn main" href="#members">學生專區</a>
-      <a class="btn ghost" href="#contact">詢問課程</a>
-    </div>
-    <div class="solve" aria-label="解題範例">
-      <p class="q">解方程式：2x + 6 = 14</p>
-      <ol>
-        <li>2x = 14 − 6 <span class="note">等號兩邊同時減 6</span></li>
-        <li>2x = 8 <span class="note">計算右邊</span></li>
-        <li>x = 4 <span class="note">兩邊同時除以 2</span></li>
-      </ol>
-      <p class="ans">答：x = <span>4</span><span class="tick" style="border:0">✓</span></p>
-    </div>
+  <div class="solve" aria-label="解題範例">
+    <p class="q">解方程式：2x + 6 = 14</p>
+    <ol>
+      <li>2x = 14 − 6 <span class="note">等號兩邊同時減 6</span></li>
+      <li>2x = 8 <span class="note">計算右邊</span></li>
+      <li>x = 4 <span class="note">兩邊同時除以 2</span></li>
+    </ol>
+    <p class="ans">答：x = <b>4</b><span class="tick">✓</span></p>
   </div>
-</section>
-
-<section id="teacher">
-  <div class="wrap">
-    <h2>師資介紹</h2>
-    <div class="panel teacher">
-      <div class="photo">老師照片<br>（請換成 photo.jpg）</div>
-      <div>
-        <h3>【老師姓名】老師</h3>
-        <p>【在這裡寫 2 到 3 句自我介紹，例如：畢業學校與科系、教學年資、教學風格，以及你想對家長說的話。】</p>
-        <ul>
-          <li>【學歷，例如：○○大學數學系】</li>
-          <li>【教學經歷，例如：家教經驗 ○ 年】</li>
-          <li>【可授課範圍，例如：國中數學、高中數學】</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="members" class="members">
-  <div class="wrap">
-    <div class="panel">
-      <h2>學生專區</h2>
-      <p>這裡放上課的解題影片，只有老師加入名單的學生可以觀看。</p>
-      <ul>
-        <li>請用老師登記的 Google 帳號登入。</li>
-        <li>如果打不開，請確認你登入的是正確的帳號，或傳訊息給老師。</li>
-      </ul>
-      <!-- 把下面的 # 換成你的 Google 雲端硬碟資料夾連結 -->
-      <a class="btn main" href="#" target="_blank" rel="noopener">開啟解題影片</a>
-    </div>
-  </div>
-</section>
-</main>
-
-<footer id="contact">
-  <div class="wrap">
-    <h2>聯絡老師</h2>
-    <p>Email：【你的 Email】</p>
-    <p>LINE：【你的 LINE ID】</p>
-    <p>上課地點與時段：【例如：台中市 ○○區／可線上上課】</p>
-  </div>
-</footer>
-
+</div>
+</div></main>
 </body>
 </html>
